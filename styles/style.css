@@ -1,297 +1,231 @@
-body {
-    margin: 0;
-    font-family: 'Yeseva One', 'sans-serif', 'arial';
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
-body * {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 a:hover {
-    color: #E3B873;
+  cursor: pointer;
 }
 
-.section_completed {
-    background-color: #131313;
-    height: 783px;
-    margin: 0 auto;
-    max-width: 1440px;
+body {
+  background-color: #131313;
 }
 
-.second_container {
-    max-width: 1440px;
-    height: 783px;
-    background-color: #131313;
-    margin: 0 auto;
+.completed-projects__wrapper {
+  display: flex;
+  background-color: #131313;
+  width: 1440px;
+  height: 783px;
 }
 
-.slider_navigation {
-    display: flex;
-    list-style-type: none;
-    color: white;
-    margin: 0;
-    padding-top: 107px;
-    padding-left: 626.45px;
-    padding-bottom: 52.68px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #E3B873;
+.completed-projects__project-info__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 134.45px;
 }
 
-.slider_navigation__item {
-    margin-right: 60.5px;
-    text-decoration: none;
+.completed-projects__project-info__caption {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+  padding-top: 176.36px;
+  width: 153px;
 }
 
-.slider_navigation__item__1 {
-    color: rgba(255, 255, 255, 0.3);
-    text-decoration: none;
+.completed-projects__project-info__caption-line {
+  margin-left: 160px;
+  margin-top: -35px;
 }
 
-.slider_navigation__item__1:hover {
-    color: #E3B873;
-    border-bottom: 2px solid #E3B873;
-    padding-bottom: 6.68px;
+.completed-projects__project-info__description__wrapper {
+  width: 442px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding-top: 40px;
+  padding-bottom: 42px;
 }
 
-.title_completed {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
-    text-transform: uppercase;
-    color: #E3B873;
-    margin: 0;
-    margin-left: 134.45px;
-    margin-top: 40px;
+.completed-projects__project-info__table {
+  width: 380px;
 }
 
-.title_completed:after {
-    display: inline-block;
-    width: 92px;
-    content: '';
-    position: absolute;
-    border-bottom: 1px solid #E3B873;
-    margin-top: 18px;
-    margin-left: 40px;
+.completed-projects__project-info__table td {
+  width: 190px;
 }
 
-.text_with_img {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+.completed-projects__project-info__table__caption {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
 }
 
-.common_text {
-    font-family: 'Nunito Sans', 'sans-serif', 'arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 27px;
-    color: #FFFFFF;
-    display: block;
-    width: 500px;
-    padding: 34px 0px 42px 0px;
-    margin: 0;
-    margin-left: 134.45px;
+.completed-projects__project-info__table__text {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #FFFFFF;
+  vertical-align: initial;
+  height: 76px;
 }
 
-h3 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #E3B873;
-    margin-left: 134.45px;
-    width: 300px;
+.completed-projects__project-info__slider__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
 }
 
-.grid_wrapper {
-    display: grid;
-    grid-template-columns: 200px 150px;
-    grid-template-rows: 100px 100px;
+.completed-projects__cities-foto__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  padding-top: 107px;
+  padding-left: 50px;
 }
 
-.description {
-    font-family: 'Nunito Sans', 'sans-serif', 'arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 21px;
-    color: #FFFFFF;
-    display: block;
-    width: 200px;
-    height: 34px;
-    margin-top: 9px;
+.itc-slider-cities-nav {
+  position: absolute;
+  z-index: 1;
+  margin-top: 107px;
+  margin-left: 626.45px;
+  display: flex;
+  gap: 60.5px;
+  width: 814px;
+  cursor: pointer;
+  z-index: 3;
 }
 
-.slider {
-    width: 679px;
-    height: 482px;
-    position: relative;
-    margin: 20px 0;
-    background-color: #131313;
-    margin-left: 626.45px;
-    margin-top: -424px;
+.itc-slider-cities-nav-elem {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.slider__images {
-    position: relative;
-    width: 679px;
-    height: 482px;
+.nav-active {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+  height: 100%;
+  padding-bottom: 4px;
 }
 
-.slider__images-title {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #131313;
-    text-align: center;
-    z-index: 1;
-    padding: 7px 0;
+.completed-projects__foto__wrapper {
+    padding-top: 45px;
+    padding-bottom: 92px;
 }
 
-.slider__images .image {
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 800ms ease;
+.itc-slider {
+  position: relative;
 }
 
-.slider__images .image.active {
-    opacity: 1;
+.itc-slider-wrapper {
+  overflow: hidden;
+  background-color: #131313;
 }
 
-.slider__arrows {
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    color: #131313;
-    margin-left: -525px;
-    margin-top: -85px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #131313;
-    align-items: center;
+.itc-slider-items {
+  transition: transform 0.5s ease;
+  
 }
 
-.slider__arrow {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.4s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.itc-slider-item {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
 }
 
-.slider__arrow:hover {
-    opacity: 0.5;
+.showing {
+  opacity: 1;
+  z-index: 2;
 }
 
-.slider__arrow.left {
-    margin-right: 190px;
+/* кнопки влево и вправо */
+.itc-slider-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #131313;
+  z-index: 3;
 }
 
-.slider__arrow.right {
-    margin-left: 117px;
+.itc-slider-btn-hide {
+  display: none;
 }
 
-.slider__dots {
-    width: 100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+.itc-slider-btn-prev {
+  margin-left: 135.45px;
+  margin-top: 620px;
 }
 
-.slider__dots-item {
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background 0.4s ease;
+.itc-slider-btn-next {
+  margin-left: 299.67px;
+  margin-top: 620px;
 }
 
-.slider__dots-item:hover, 
-.slider__dots-item.active {
-    background: #FFFFFF;
+.itc-slider-btn::before {
+  content: "";  
+  width: 41.46px;
+  height: 13.28px;
+  background-color: #131313;
+  border: 1px solid #131313;
 }
 
-.slider__nav {
-    width: 679px;
-    height: 33px;
-    margin-left: 597px;
-    margin-top: 107px;
-    background-color: #131313;
-    display: flex;
-    justify-content: space-around;
-    color: rgba(255, 255, 255, 0.3);
+.itc-slider-btn-prev::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='42' height='14' fill='none'%3e%3cpath fill='%23fff' fill-rule='evenodd' d='M6.638 13.276 0 6.638 6.638 0l.948.948-5.69 5.69 5.69 5.69-.948.948Z' clip-rule='evenodd'/%3e%3cpath fill='%23fff' fill-rule='evenodd' d='M.948 5.968h40.508v1.34H.948v-1.34Z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
 }
 
-.slider__nav-item:hover, 
-.slider__nav-item.active {
-    color: #E3B873;
-    border-bottom: 2px solid #E3B873;
-    padding-bottom: 6.68px;
+.itc-slider-btn-next::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='42' height='14' fill='none'%3e%3cpath fill='%23fff' fill-rule='evenodd' d='m35.045 0 6.638 6.638-6.638 6.638-.948-.948 5.691-5.69-5.69-5.69.947-.948Z' clip-rule='evenodd'/%3e%3cpath fill='%23fff' fill-rule='evenodd' d='M40.736 7.308H.227v-1.34h40.508v1.34Z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
 }
 
-.slider__nav-item.n0:before {
-    content: "rostov-on-don, admiral";
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    width: 199px;
-    height: 33px;
-    background-color: #131313;
-    cursor: pointer;
-    transition: color 0.4s ease;
+/* индикаторы */
+.itc-slider-indicators {
+  position: absolute;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin-top: 623px;
+  margin-left: 203px;
+  list-style: none;
+  z-index: 3;
 }
 
-.slider__nav-item.n1:before {
-    content: "sochi thieves";
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    width: 199px;
-    height: 33px;
-    background-color: #131313;
-    cursor: pointer;
-    transition: color 0.4s ease;
+.itc-slider-indicator {
+  flex: 0 1 auto;
+  width: 9.57px;
+  height: 9.57px;
+  border-radius: 30px;
+  margin-right: 17.54px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
-.slider__nav-item.n2:before {
-    content: "rostov-on-don patriotic";
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    width: 199px;
-    height: 33px;
-    background-color: #131313;
-    cursor: pointer;
-    transition: color 0.4s ease;
+.indicator-active {
+  background-color: #FFFFFF;
 }
